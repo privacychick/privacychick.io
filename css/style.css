@@ -170,7 +170,7 @@ p:last-child { margin-bottom: 0; }
 .about-strip h2 { color: #FFFFFF; margin-bottom: 1rem; }
 .about-strip p { color: rgba(255,255,255,0.75); font-size: 1.05rem; margin-bottom: 1.25rem; }
 .about-strip-image { display: flex; align-items: center; justify-content: center; padding: 1rem; }
-.about-strip-image img { width: 200px; height: 200px; object-fit: contain; flex-shrink: 0; }
+.about-strip-image img { width: 75%; height: auto; object-fit: contain; display: block; }
 .about-strip-image svg { width: 220px; height: 220px; flex-shrink: 0; }
 
 /* PAGE HERO */
