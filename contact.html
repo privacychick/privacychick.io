@@ -93,7 +93,11 @@
     
     <p>For your privacy and mine, I don't list a direct email address here. If you need to report one of the issues above, you can use the secure form below. Please note that I read all submissions but cannot guarantee a reply.</p>
     
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="margin-top: 2.5rem; background: #fff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+    <form id="contactForm" action="https://formspree.io/f/mvzdngnp" method="POST" style="margin-top: 2.5rem; background: #fff; padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow-sm);">
+      <div style="margin-bottom: 1.5rem;">
+        <label for="email" style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Your email address</label>
+        <input type="email" id="email" name="_replyto" required placeholder="you@example.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; font-family: var(--font); font-size: 1rem; box-sizing: border-box;">
+      </div>
       <div style="margin-bottom: 1.5rem;">
         <label for="reason" style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Reason for contact</label>
         <select id="reason" name="reason" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; font-family: var(--font); font-size: 1rem;">
@@ -107,9 +111,38 @@
         <label for="message" style="display: block; font-weight: 600; margin-bottom: 0.5rem; font-size: 0.9rem;">Message</label>
         <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: 6px; font-family: var(--font); font-size: 1rem; resize: vertical;"></textarea>
       </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
+      <button type="submit" class="btn btn-primary" id="submitBtn">Send Message</button>
+      <div id="formSuccess" style="display:none; margin-top:1rem; padding:1rem; background:#d1fae5; border-radius:6px; color:#065f46; font-weight:600;">&#10003; Message sent — thank you. I read every submission.</div>
+      <div id="formError" style="display:none; margin-top:1rem; padding:1rem; background:#fee2e2; border-radius:6px; color:#991b1b;">Something went wrong. Please try again in a moment.</div>
       <p style="font-size: 0.8rem; color: var(--text-light); margin-top: 1rem; margin-bottom: 0;">Powered securely by Formspree. No tracking scripts are used.</p>
     </form>
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      var btn = document.getElementById('submitBtn');
+      btn.disabled = true;
+      btn.textContent = 'Sending…';
+      try {
+        var resp = await fetch(this.action, {
+          method: 'POST',
+          body: new FormData(this),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+          document.getElementById('formSuccess').style.display = 'block';
+          document.getElementById('formError').style.display = 'none';
+          this.reset();
+        } else {
+          throw new Error('bad response');
+        }
+      } catch(err) {
+        document.getElementById('formError').style.display = 'block';
+        document.getElementById('formSuccess').style.display = 'none';
+      }
+      btn.disabled = false;
+      btn.textContent = 'Send Message';
+    });
+    </script>
 
   </div>
 </section>
