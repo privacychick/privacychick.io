@@ -1,7 +1,7 @@
 # Privacy Chick — security.txt
 # https://securitytxt.org
 
-Contact: mailto:security@privacychick.io
+Contact: https://privacychick.io/contact.html
 Preferred-Languages: en
 Canonical: https://privacychick.io/.well-known/security.txt
 
