@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Two-Factor Authentication | Privacy Chick</title>
+  <meta name="description" content="Add a second layer of security to every account. A step-by-step guide to setting up two-factor authentication using Proton Authenticator.">
+  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo" aria-label="Privacy Chick Home">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M20 2L4 9v10c0 9.4 6.8 18.2 16 20.4C29.2 37.2 36 28.4 36 19V9L20 2z" fill="#2D7D6F"/><ellipse cx="20" cy="23" rx="7" ry="6.5" fill="#FFF"/><circle cx="20" cy="15.5" r="5" fill="#FFF"/><circle cx="18.2" cy="14.8" r="0.9" fill="#2C3440"/><circle cx="21.8" cy="14.8" r="0.9" fill="#2C3440"/><path d="M19 16.8 L20 18.2 L21 16.8 Z" fill="#F59E0B"/></svg>
+        <span class="nav-logo-text">Privacy Chick</span>
+      </a>
+      <span class="nav-tagline">Your digital privacy, simplified</span>
+    </div>
+    <!-- nav-links removed -->
+    <ul class="nav-links" style="display:none">
+      <li><a href="2fa.html" class="active">2FA</a></li>
+      <li><a href="passwords.html">Passwords</a></li>
+      <li><a href="email.html">Email</a></li>
+      <li><a href="browser.html">Browser</a></li>
+      <li><a href="search.html">Search</a></li>
+      <li><a href="social.html">Social</a></li>
+      <li><a href="text.html">Messaging</a></li>
+      <li><a href="credit.html">Credit Freeze</a></li>
+      <li><a href="pwned.html">Data Breaches</a></li>
+      <li><a href="vpn.html">VPN</a></li>
+      <li><a href="ai.html">AI Assistants</a></li>
+      <li><a href="about.html">My Story</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <p class="nav-drawer-label">Guides</p>
+  <a href="2fa.html">Two-Factor Authentication</a>
+  <a href="email.html">Email</a>
+  <a href="search.html">Search Engine</a>
+  <a href="passwords.html">Passwords</a>
+  <a href="browser.html">Browser</a>
+  <a href="social.html">Social Media</a>
+  <a href="text.html">Text Messaging</a>
+  <a href="credit.html">Credit Freeze</a>
+  <a href="pwned.html">Data Breaches</a>
+  <a href="vpn.html">VPN</a>
+  <a href="ai.html">AI Assistants</a>
+  <p class="nav-drawer-label">Site</p>
+  <a href="about.html">My Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/topics/2fa.jpg');"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow"><span class="badge-critical" style="position:static; display:inline-block; margin-bottom:0.5rem;">Critical</span></span>
+      <h1>Two-Factor Authentication</h1>
+      <p>Add a second lock to every account. Even if your password is stolen, your account stays safe.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <div class="content-grid">
+
+      <!-- MAIN COLUMN -->
+      <main class="content-main">
+
+        <!-- RECOMMENDATION -->
+        <div class="rec-box" id="recommendation">
+          <span class="eyebrow">My recommendation</span>
+          <img src="images/logos/proton-authenticator.webp" alt="Proton Authenticator logo" class="rec-logo">
+          <h2>Proton Authenticator</h2>
+          <p>Free, open-source, end-to-end encrypted, and works offline. Available on iPhone, Android, Windows, Mac, and Linux.</p>
+          <a href="https://proton.me/authenticator" target="_blank" rel="noopener" class="btn btn-primary">Download Proton Authenticator</a>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs-wrapper">
+          <div class="tabs-nav">
+            <button class="tab-btn active" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Quick Guide
+            </button>
+            <button class="tab-btn" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Learn More
+            </button>
+          </div>
+
+          <!-- QUICK GUIDE TAB -->
+          <div class="tab-panel active" id="guide">
+            <h2 style="margin-bottom:1.5rem;">How to set up 2FA in 5 steps</h2>
+
+            <ol class="steps-list">
+              <li class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Download Proton Authenticator</h4>
+                  <p>Install the free app on your phone from the <a href="https://apps.apple.com/app/apple-store/id6741758667" target="_blank" rel="noopener">App Store (iPhone)</a> or <a href="https://play.google.com/store/apps/details?id=proton.android.authenticator" target="_blank" rel="noopener">Google Play (Android)</a>. You do not need a Proton account to use it.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Go to your account&rsquo;s security settings</h4>
+                  <p>Log in to the account you want to protect (your bank, email, Amazon, etc.) and look for <strong>Security</strong> or <strong>Two-Factor Authentication</strong> in the settings menu.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Choose &ldquo;Authenticator App&rdquo;</h4>
+                  <p>When asked how you want to receive your second factor, select <strong>Authenticator App</strong> (not SMS/text message &mdash; I&rsquo;ll explain why below). The site will show you a QR code.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h4>Scan the QR code</h4>
+                  <p>Open Proton Authenticator, tap the <strong>+</strong> button, and choose <strong>Scan QR code</strong>. Point your phone at the code on your screen. The account is now linked.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                  <h4>Save your backup codes</h4>
+                  <p>Most sites will show you a list of one-time backup codes. <strong>Save these somewhere safe</strong> &mdash; a printed sheet in a secure location, or in your password manager. You&rsquo;ll need them if you ever lose your phone.</p>
+                </div>
+              </li>
+            </ol>
+
+            <div class="callout callout-tip">
+              <span class="callout-icon">&#128161;</span>
+              <div class="callout-body">
+                <strong>Start here</strong>
+                <p>Set up 2FA on your most important accounts first: email, bank, and any account that stores payment information. Then work your way through the rest.</p>
+              </div>
+            </div>
+
+            <div class="callout callout-warn">
+              <span class="callout-icon">&#9888;</span>
+              <div class="callout-body">
+                <strong>Avoid SMS (text message) 2FA when possible</strong>
+                <p>If a site only offers to send a code by text message, that&rsquo;s better than nothing &mdash; but it&rsquo;s the weakest form of 2FA. Hackers can intercept texts through a technique called SIM swapping. Use an authenticator app whenever the option is available.</p>
+              </div>
+            </div>
+
+          </div><!-- /quick guide tab -->
+
+          <!-- LEARN MORE TAB -->
+          <div class="tab-panel" id="learn-more">
+
+            <div class="content-section">
+              <h2>What is two-factor authentication?</h2>
+              <p>Two-factor authentication (2FA) &mdash; sometimes called two-step verification &mdash; adds a second layer of protection to your accounts beyond just a password. The idea is simple: even if someone steals your password, they still can&rsquo;t get into your account without also having access to your second factor.</p>
+              <p>Think of it like a bank safe that requires both a key and a combination. Stealing one isn&rsquo;t enough.</p>
+              <p>The &ldquo;factors&rdquo; in authentication are typically described as:</p>
+              <ul style="margin-bottom:1rem;">
+                <li><strong>Something you know</strong> &mdash; your password</li>
+                <li><strong>Something you have</strong> &mdash; your phone (with an authenticator app)</li>
+                <li><strong>Something you are</strong> &mdash; a fingerprint or face scan</li>
+              </ul>
+              <p>2FA combines at least two of these. The most common combination is your password plus a time-sensitive code generated by an app on your phone.</p>
+            </div>
+
+            <div class="content-section">
+              <h2>Why passwords alone aren&rsquo;t enough</h2>
+              <p>Passwords are stolen constantly &mdash; through data breaches at companies you trust, through phishing emails, and through automated attacks that try millions of combinations per second. According to the 2024 Verizon Data Breach Investigations Report, stolen credentials are involved in over 80% of hacking-related breaches.</p>
+              <p>Even a strong, unique password can be compromised if the company storing it is breached. 2FA means that even a stolen password is useless to an attacker without your phone.</p>
+            </div>
+
+            <div class="content-section">
+              <h2>Types of 2FA &mdash; from weakest to strongest</h2>
+              <p>Not all 2FA is created equal. Here&rsquo;s how the common options compare:</p>
+
+              <div style="overflow-x:auto;margin:1.5rem 0;">
+                <table style="width:100%;border-collapse:collapse;font-size:0.93rem;">
+                  <thead>
+                    <tr style="background:var(--cream);">
+                      <th style="text-align:left;padding:0.75rem 1rem;border-bottom:2px solid var(--border);">Method</th>
+                      <th style="text-align:left;padding:0.75rem 1rem;border-bottom:2px solid var(--border);">How it works</th>
+                      <th style="text-align:left;padding:0.75rem 1rem;border-bottom:2px solid var(--border);">Strength</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="border-bottom:1px solid var(--border);">
+                      <td style="padding:0.75rem 1rem;font-weight:600;">SMS / Text message</td>
+                      <td style="padding:0.75rem 1rem;">A 6-digit code is sent to your phone number</td>
+                      <td style="padding:0.75rem 1rem;color:#C0603A;">Weak &mdash; vulnerable to SIM swapping</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border);background:var(--warm-white);">
+                      <td style="padding:0.75rem 1rem;font-weight:600;">Email code</td>
+                      <td style="padding:0.75rem 1rem;">A code is sent to your email address</td>
+                      <td style="padding:0.75rem 1rem;color:#9A6A10;">Moderate &mdash; only as secure as your email</td>
+                    </tr>
+                    <tr style="border-bottom:1px solid var(--border);">
+                      <td style="padding:0.75rem 1rem;font-weight:600;">Authenticator app (TOTP)</td>
+                      <td style="padding:0.75rem 1rem;">App generates a new 6-digit code every 30 seconds</td>
+                      <td style="padding:0.75rem 1rem;color:var(--teal);font-weight:600;">Strong &mdash; my recommendation</td>
+                    </tr>
+                    <tr style="background:var(--warm-white);">
+                      <td style="padding:0.75rem 1rem;font-weight:600;">Hardware security key</td>
+                      <td style="padding:0.75rem 1rem;">A physical USB or NFC key you plug in or tap</td>
+                      <td style="padding:0.75rem 1rem;color:var(--teal);font-weight:600;">Strongest &mdash; best for high-value accounts</td>
+                    </tr>
+                    <tr style="border-top:1px solid var(--border);">
+                      <td style="padding:0.75rem 1rem;font-weight:600;">Passkeys</td>
+                      <td style="padding:0.75rem 1rem;">Replaces both your password <em>and</em> 2FA with a single biometric step (Face ID, fingerprint, or device PIN)</td>
+                      <td style="padding:0.75rem 1rem;color:var(--teal);font-weight:600;">Strongest &mdash; the future of login</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="content-section">
+              <h2>A note on passkeys</h2>
+              <p>Passkeys are a newer technology that goes a step beyond traditional 2FA. Instead of entering a password and then a code, a passkey uses your device&rsquo;s built-in biometrics &mdash; Face ID, fingerprint, or PIN &mdash; to verify your identity in a single step. The key never leaves your device, which means there&rsquo;s nothing for hackers to steal from a company&rsquo;s servers.</p>
+              <p>Major sites including Google, Apple, Amazon, and GitHub now support passkeys. When a site offers you the option to &ldquo;create a passkey,&rdquo; take it &mdash; it&rsquo;s more secure than a password plus 2FA combined. Your password manager (Bitwarden, 1Password) can store passkeys alongside your passwords.</p>
+              <p>Passkeys are still rolling out across the web, so you&rsquo;ll still need an authenticator app for many sites. But whenever a passkey option is available, it&rsquo;s the best choice.</p>
+            </div>
+
+            <div class="content-section">
+              <h2>Why I recommend Proton Authenticator</h2>
+              <p>I recommend <strong>Proton Authenticator</strong> because it combines strong privacy with ease of use:</p>
+              <ul style="margin-bottom:1rem;">
+                <li><strong>End-to-end encrypted</strong> &mdash; your 2FA codes are encrypted before they leave your device</li>
+                <li><strong>No account required</strong> &mdash; works fully offline; a Proton account is only needed if you want to sync across multiple devices</li>
+                <li><strong>Open-source</strong> &mdash; the code is publicly auditable, so security researchers can verify it does what it claims</li>
+                <li><strong>Cross-platform</strong> &mdash; available on iPhone, Android, Windows, Mac, and Linux</li>
+                <li><strong>Free</strong> &mdash; no cost, no ads, no data selling</li>
+              </ul>
+              <p>Proton is a Swiss company founded by scientists from CERN. Their products are built around the principle that they should never be able to access your data even if compelled by law &mdash; because they design their systems so that they technically cannot.</p>
+            </div>
+
+            <div class="further-reading" id="reading">
+              <h3>Further Reading</h3>
+              <ul>
+                <li>
+                  <a href="https://proton.me/blog/two-factor-authentication" target="_blank" rel="noopener">What is two-factor authentication?</a>
+                  <span class="source">Proton Blog</span>
+                </li>
+                <li>
+                  <a href="https://www.cisa.gov/mfa" target="_blank" rel="noopener">Back to Basics: Multi-Factor Authentication</a>
+                  <span class="source">NIST (National Institute of Standards and Technology)</span>
+                </li>
+                <li>
+                  <a href="https://www.cisa.gov/mfa" target="_blank" rel="noopener">The Case for Strong Authentication</a>
+                  <span class="source">Krebs on Security</span>
+                </li>
+                <li>
+                  <a href="https://2fa.directory/" target="_blank" rel="noopener">Two Factor Auth Directory</a>
+                  <span class="source">twofactorauth.org &mdash; check which sites support 2FA</span>
+                </li>
+              </ul>
+            </div>
+
+          </div><!-- /learn more tab -->
+        </div><!-- /tabs-wrapper -->
+
+      </main>
+
+      <!-- SIDEBAR -->
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h4>Download Proton Authenticator</h4>
+          <ul style="margin-top:0.5rem;">
+            <li><a href="https://apps.apple.com/app/apple-store/id6741758667" target="_blank" rel="noopener">iPhone / iPad</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=proton.android.authenticator" target="_blank" rel="noopener">Android</a></li>
+            <li><a href="https://proton.me/authenticator" target="_blank" rel="noopener">Windows &amp; Mac</a></li>
+          </ul>
+        </div>
+      </aside>
+
+    </div><!-- /content-grid -->
+  </div><!-- /container -->
+</div><!-- /page-content -->
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Privacy Chick</span>
+        <p>Simple, practical guides to protecting your digital privacy. No tech background required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="2fa.html">Two-Factor Authentication</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="email.html">Email</a></li>
+          <li><a href="browser.html">Browser</a></li>
+          <li><a href="search.html">Search Engine</a></li>
+          <li><a href="social.html">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Guides</h4>
+        <ul>
+          <li><a href="text.html">Text Messaging</a></li>
+          <li><a href="credit.html">Credit Freeze</a></li>
+          <li><a href="pwned.html">Data Breaches</a></li>
+          <li><a href="vpn.html">VPN</a></li>
+          <li><a href="ai.html">AI Assistants</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2018&ndash;<span id="yr"></span> Privacy Chick. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Breaches | Privacy Chick</title>
+  <meta name="description" content="Find out if your email address or passwords have been exposed in a data breach — and set up free alerts for the future.">
+  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo" aria-label="Privacy Chick Home">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 2L4 9v10c0 9.4 6.8 18.2 16 20.4C29.2 37.2 36 28.4 36 19V9L20 2z" fill="#2D7D6F"/>
+          <ellipse cx="20" cy="23" rx="7" ry="6.5" fill="#FFF"/>
+          <circle cx="20" cy="15.5" r="5" fill="#FFF"/>
+          <circle cx="18.2" cy="14.8" r="0.9" fill="#2C3440"/>
+          <circle cx="21.8" cy="14.8" r="0.9" fill="#2C3440"/>
+          <path d="M19 16.8 L20 18.2 L21 16.8 Z" fill="#F59E0B"/>
+        </svg>
+        <span class="nav-logo-text">Privacy Chick</span>
+      </a>
+      <span class="nav-tagline">Your digital privacy, simplified</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <p class="nav-drawer-label">Guides</p>
+  <a href="2fa.html">2FA</a>
+  <a href="passwords.html">Passwords</a>
+  <a href="email.html">Email</a>
+  <a href="browser.html">Browser</a>
+  <a href="search.html">Search</a>
+  <a href="social.html">Social</a>
+  <a href="text.html">Messaging</a>
+  <a href="credit.html">Credit Freeze</a>
+  <a href="pwned.html">Data Breaches</a>
+  <a href="vpn.html">VPN</a>
+  <a href="ai.html">AI Assistants</a>
+  <p class="nav-drawer-label">Site</p>
+  <a href="about.html">My Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/topics/pwned.jpg');"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow"><span class="badge-critical" style="position:static; display:inline-block; margin-bottom:0.5rem;">Critical</span></span>
+      <h1>Data Breaches</h1>
+      <p>Find out if your email or passwords have already been stolen &mdash; and get alerted the moment they are in the future.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <div class="content-grid">
+      <main class="content-main">
+
+        <!-- RECOMMENDATION -->
+        <div class="rec-box" id="recommendation">
+          <span class="eyebrow">My recommendation</span>
+          <img src="images/logos/hibp.png" alt="Have I Been Pwned logo" class="rec-logo">
+          <h2>Have I Been Pwned</h2>
+          <p>The most trusted data breach monitoring service. Free, run by a respected security researcher, and used by governments and companies worldwide.</p>
+          <a href="https://haveibeenpwned.com" target="_blank" rel="noopener" class="btn btn-primary">Check Your Email Now</a>
+          
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs-wrapper">
+          <div class="tabs-nav">
+            <button class="tab-btn active" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Quick Guide
+            </button>
+            <button class="tab-btn" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Learn More
+            </button>
+          </div>
+          <div class="tab-panel active" id="guide">
+            <ol class="steps-list">
+              <li class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Check if your email has been breached</h4>
+                  <p>Go to <a href="https://haveibeenpwned.com" target="_blank" rel="noopener">haveibeenpwned.com</a> and enter your email address. The site will show you every known data breach that included your email. Do this for every email address you use.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Check if your passwords have been exposed</h4>
+                  <p>Go to <a href="https://haveibeenpwned.com/Passwords" target="_blank" rel="noopener">haveibeenpwned.com/Passwords</a> and check any passwords you use. The site uses a clever privacy technique &mdash; it never sees your actual password, only a partial hash. If a password appears, stop using it immediately everywhere.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Set up free breach notifications</h4>
+                  <p>On the main page, click <strong>"Notify me"</strong> and enter your email address. You&rsquo;ll receive an email alert the moment your address appears in any new breach. It&rsquo;s free and takes 30 seconds.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                  <h4>Change passwords for any breached accounts</h4>
+                  <p>For every account that appears in a breach, log in and change the password. Use your password manager to generate a new strong, unique password. If you reused that password anywhere else, change it there too.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                  <h4>Enable 2FA on breached accounts</h4>
+                  <p>After changing the password, add two-factor authentication to any account that was breached. See my <a href="2fa.html">2FA guide</a> for how.</p>
+                </div>
+              </li>
+            </ol>
+            <div class="callout callout-tip">
+              <span class="callout-icon">&#128161;</span>
+              <div class="callout-body">
+                <strong>Don't panic if you see breaches</strong>
+                <p>Most people have appeared in at least one breach. The important thing is to act: change the password, enable 2FA, and move on. Knowing is better than not knowing.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="learn-more">
+            <div class="content-section">
+              <h2>What is a data breach?</h2>
+              <p>A data breach occurs when hackers gain unauthorized access to a company&rsquo;s database and steal user records. These records typically include email addresses, passwords (often encrypted, but sometimes not), names, phone numbers, and other personal information. The stolen data is then sold on dark web marketplaces or used directly for fraud.</p>
+              <p>Data breaches happen constantly. In 2024 alone, billions of records were exposed across hundreds of breaches at companies ranging from healthcare providers to retailers to social media platforms. If you&rsquo;ve been online for more than a few years, it is almost certain that at least one of your accounts has been involved in a breach.</p>
+            </div>
+            <div class="content-section">
+              <h2>About Have I Been Pwned</h2>
+              <p>Have I Been Pwned (HIBP) was created in 2013 by Troy Hunt, a respected Australian security researcher and Microsoft Regional Director. The site aggregates data from known breaches and allows anyone to check whether their email address or password appears in the exposed data.</p>
+              <p>HIBP is trusted by governments, cybersecurity companies, and major technology firms. The FBI and the UK&rsquo;s National Crime Agency contribute breach data to the service. It is free for individuals and has been used to notify hundreds of millions of people about breaches affecting them.</p>
+            </div>
+            <div class="content-section">
+              <h2>How the password check works (without exposing your password)</h2>
+              <p>When you check a password on HIBP, the site uses a technique called <strong>k-anonymity</strong>. Your browser converts your password into a cryptographic hash, then sends only the first 5 characters of that hash to the server. The server returns all hashes that start with those 5 characters, and your browser checks locally whether your full hash is in the list. The server never sees your actual password or its full hash. It&rsquo;s a clever privacy-preserving design.</p>
+            </div>
+            <div class="further-reading">
+              <h3>Further Reading</h3>
+              <ul>
+                <li><a href="https://haveibeenpwned.com/About" target="_blank" rel="noopener">Have I Been Pwned — About</a><span class="source">HaveIBeenPwned.com</span></li>
+                <li><a href="https://consumer.ftc.gov/articles/what-do-after-data-breach" target="_blank" rel="noopener">What to Do After a Data Breach</a><span class="source">Federal Trade Commission</span></li>
+                <li><a href="https://www.troyhunt.com/ive-just-launched-pwned-passwords-version-2/" target="_blank" rel="noopener">Understanding k-Anonymity in Password Checks</a><span class="source">Troy Hunt's Blog</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <aside class="content-sidebar">
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Privacy Chick</span>
+        <p>Simple, practical guides to protecting your digital privacy. No tech background required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="2fa.html">Two-Factor Authentication</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="email.html">Email</a></li>
+          <li><a href="browser.html">Browser</a></li>
+          <li><a href="search.html">Search Engine</a></li>
+          <li><a href="social.html">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Guides</h4>
+        <ul>
+          <li><a href="text.html">Text Messaging</a></li>
+          <li><a href="credit.html">Credit Freeze</a></li>
+          <li><a href="pwned.html">Data Breaches</a></li>
+          <li><a href="vpn.html">VPN</a></li>
+          <li><a href="ai.html">AI Assistants</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2018&ndash;<span id="yr"></span> Privacy Chick. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

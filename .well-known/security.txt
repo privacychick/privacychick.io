@@ -1,0 +1,13 @@
+# Privacy Chick — security.txt
+# https://securitytxt.org
+
+Contact: mailto:security@privacychick.io
+Preferred-Languages: en
+Canonical: https://privacychick.io/.well-known/security.txt
+
+# This is a static informational website with no user accounts,
+# no login forms, no payment processing, and no server-side code.
+# There is no meaningful attack surface, but responsible disclosure
+# is always welcome.
+
+Policy: https://privacychick.io/privacy.html

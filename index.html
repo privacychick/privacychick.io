@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Chick | Protect Your Digital Life</title>
+  <meta name="description" content="Simple, practical guides to protecting your digital privacy. No tech background required.">
+  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo" aria-label="Privacy Chick Home">
+        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 2L4 9v10c0 9.4 6.8 18.2 16 20.4C29.2 37.2 36 28.4 36 19V9L20 2z" fill="#2D7D6F"/>
+          <ellipse cx="20" cy="23" rx="7" ry="6.5" fill="#FFF"/>
+          <circle cx="20" cy="15.5" r="5" fill="#FFF"/>
+          <circle cx="18.2" cy="14.8" r="0.9" fill="#2C3440"/>
+          <circle cx="21.8" cy="14.8" r="0.9" fill="#2C3440"/>
+          <path d="M19 16.8 L20 18.2 L21 16.8 Z" fill="#F59E0B"/>
+        </svg>
+        <span class="nav-logo-text">Privacy Chick</span>
+      </a>
+      <span class="nav-tagline">Your digital privacy, simplified</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile Drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <p class="nav-drawer-label">Guides</p>
+  <a href="2fa.html">Two-Factor Authentication</a>
+  <a href="email.html">Email</a>
+  <a href="search.html">Search Engine</a>
+  <a href="passwords.html">Passwords</a>
+  <a href="browser.html">Browser</a>
+  <a href="social.html">Social Media</a>
+  <a href="text.html">Text Messaging</a>
+  <a href="credit.html">Credit Freeze</a>
+  <a href="pwned.html">Data Breaches</a>
+  <a href="vpn.html">VPN</a>
+  <a href="ai.html">AI Assistants</a>
+  <p class="nav-drawer-label">Site</p>
+  <a href="about.html">My Story</a>
+  <a 
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg" style="background-image: url('images/hero_home.jpg');"></div>
+  <div class="container">
+    <div class="hero-content">
+      <span class="eyebrow">Practical guides for real people</span>
+      <h1>Small steps.<br><em>Big protection.</em></h1>
+      <p>I test what works and break it down into clear, simple guides anyone can follow &mdash; no tech background required.</p>
+      <div class="hero-actions">
+        <a href="#guides" class="btn btn-primary">Browse the guides</a>
+        <a href="about.html" class="btn btn-outline">My story</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TOPIC CARDS -->
+<section class="cards-section" id="guides">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Where to start</span>
+      <h2>Pick a topic, take action</h2>
+      <p>Each guide includes a quick how-to and a deeper explanation for those who want to understand the why.</p>
+    </div>
+    <div class="cards-grid">
+
+      <a href="2fa.html" class="card" style="--card-overlay: rgba(192,57,43,0.72)">
+        <div class="card-image">
+          <img src="images/topics/2fa.jpg" alt="Two-factor authentication" loading="lazy">
+          <span class="card-badge badge-critical">Critical</span>
+        </div>
+        <div class="card-body">
+          <h3>Two-Factor Authentication</h3>
+          <p>Add a second lock to every account. Even if your password is stolen, your account stays safe.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="email.html" class="card" style="--card-overlay: rgba(45,111,168,0.72)">
+        <div class="card-image">
+          <img src="images/topics/email.jpg" alt="Private email" loading="lazy">
+          <span class="card-badge badge-important">Important</span>
+        </div>
+        <div class="card-body">
+          <h3>Email</h3>
+          <p>Your email provider reads your messages to sell ads. Switch to one that can&rsquo;t &mdash; and won&rsquo;t.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="search.html" class="card" style="--card-overlay: rgba(39,174,96,0.72)">
+        <div class="card-image">
+          <img src="images/topics/search.jpg" alt="Private search engine" loading="lazy">
+          <span class="card-badge badge-easy">Easy Win</span>
+        </div>
+        <div class="card-body">
+          <h3>Search Engine</h3>
+          <p>Google records every search you make. Use a search engine that finds answers without tracking you.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="passwords.html" class="card" style="--card-overlay: rgba(192,57,43,0.72)">
+        <div class="card-image">
+          <img src="images/topics/passwords.jpg" alt="Password manager" loading="lazy">
+          <span class="card-badge badge-critical">Critical</span>
+        </div>
+        <div class="card-body">
+          <h3>Passwords</h3>
+          <p>Stop reusing passwords. A password manager remembers them all &mdash; you only need to remember one.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="browser.html" class="card" style="--card-overlay: rgba(45,111,168,0.72)">
+        <div class="card-image">
+          <img src="images/topics/browser.jpg" alt="Private browser" loading="lazy">
+          <span class="card-badge badge-important">Important</span>
+        </div>
+        <div class="card-body">
+          <h3>Browser</h3>
+          <p>Your browser tracks everywhere you go online. Switch to one that blocks trackers by default.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="social.html" class="card" style="--card-overlay: rgba(39,174,96,0.72)">
+        <div class="card-image">
+          <img src="images/topics/social.jpg" alt="Social media privacy" loading="lazy">
+          <span class="card-badge badge-easy">Easy Win</span>
+        </div>
+        <div class="card-body">
+          <h3>Social Media</h3>
+          <p>Facebook and X profit from your data. You don&rsquo;t have to quit everything &mdash; but you can downsize.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="text.html" class="card" style="--card-overlay: rgba(192,57,43,0.72)">
+        <div class="card-image">
+          <img src="images/topics/text.jpg" alt="Encrypted messaging" loading="lazy">
+          <span class="card-badge badge-critical">Critical</span>
+        </div>
+        <div class="card-body">
+          <h3>Text Messaging</h3>
+          <p>Regular text messages aren&rsquo;t private. Switch to an app that encrypts your conversations end-to-end.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="credit.html" class="card" style="--card-overlay: rgba(45,111,168,0.72)">
+        <div class="card-image">
+          <img src="images/topics/credit.jpg" alt="Credit freeze" loading="lazy">
+          <span class="card-badge badge-important">Important</span>
+        </div>
+        <div class="card-body">
+          <h3>Credit Freeze</h3>
+          <p>Prevent identity thieves from opening accounts in your name. It&rsquo;s free and takes about 15 minutes.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="pwned.html" class="card" style="--card-overlay: rgba(39,174,96,0.72)">
+        <div class="card-image">
+          <img src="images/topics/pwned.jpg" alt="Data breach monitoring" loading="lazy">
+          <span class="card-badge badge-easy">Easy Win</span>
+        </div>
+        <div class="card-body">
+          <h3>Data Breaches</h3>
+          <p>Find out if your email or passwords have already been stolen &mdash; and get alerted if they are in the future.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="vpn.html" class="card" style="--card-overlay: rgba(93,109,126,0.72)">
+        <div class="card-image">
+          <img src="images/topics/vpn.jpg" alt="VPN privacy" loading="lazy">
+          <span class="card-badge badge-advanced">Advanced</span>
+        </div>
+        <div class="card-body">
+          <h3>VPN</h3>
+          <p>Shield your internet connection from your ISP, hackers on public Wi-Fi, and other snoops.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+<a href="ai.html" class="card" style="--card-overlay: rgba(93,109,126,0.72)">
+        <div class="card-image">
+          <img src="images/topics/ai.jpg" alt="AI assistant privacy" loading="lazy">
+          <span class="card-badge badge-advanced">Advanced</span>
+        </div>
+        <div class="card-body">
+          <h3>AI Assistants</h3>
+          <p>ChatGPT and similar tools store everything you type. Learn which AI tools are safer &mdash; and how to use them wisely.</p>
+          <span class="card-link">Read the guide</span>
+        </div>
+      </a>
+
+</div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section" style="background: var(--warm-white);">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">How each guide works</span>
+      <h2>Two ways to read every guide</h2>
+      <p>Whether you want to act now or understand why, every guide has you covered.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;max-width:800px;margin:0 auto;">
+      <div style="background:var(--teal-pale);border-radius:var(--radius-lg);padding:2rem;border:1px solid rgba(45,125,111,0.18);">
+        <div style="font-size:1.5rem;margin-bottom:0.75rem;">&#9889;</div>
+        <h3 style="margin-bottom:0.5rem;">Quick Guide</h3>
+        <p style="color:var(--charcoal-mid);font-size:0.95rem;">Just tell me what to do. Every guide starts with a clear, numbered checklist. No jargon. No fluff. Just the steps you need to get protected.</p>
+      </div>
+      <div style="background:var(--amber-pale);border-radius:var(--radius-lg);padding:2rem;border:1px solid rgba(232,160,32,0.2);">
+        <div style="font-size:1.5rem;margin-bottom:0.75rem;">&#128269;</div>
+        <h3 style="margin-bottom:0.5rem;">Learn More</h3>
+        <p style="color:var(--charcoal-mid);font-size:0.95rem;">I want to understand why. Every guide includes a deeper explanation with context, background, and further reading for the curious.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT STRIP -->
+<section class="about-strip">
+  <div class="container">
+    <div class="about-strip-inner">
+      <div>
+        <span class="eyebrow" style="color:rgba(255,255,255,0.5);">My Story</span>
+        <h2>Real person.<br>Real recommendations.</h2>
+        <p>I&rsquo;m a gamer who started digging into data collection years ago and came to a simple conclusion: if you&rsquo;re not paying for a product, you are the product. That made me wildly uncomfortable, so I started locking down my digital life.</p>
+        <p>I didn&rsquo;t do it alone. My son adopted these tools easily, proving that when you introduce privacy early, the next generation just gets it. And my wife, who cares more about yoga than tech, uses them because she understands that her personal information is her most valuable commodity and she wants to control who has access to it.</p>
+        <p>If we can do it, you can too.</p>
+        <a href="about.html" class="btn btn-outline">My story</a>
+      </div>
+      <div class="about-strip-image">
+        <svg width="220" height="220" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Privacy Chick logo" role="img">
+          <path d="M20 2L4 9v10c0 9.4 6.8 18.2 16 20.4C29.2 37.2 36 28.4 36 19V9L20 2z" fill="#2D7D6F"/>
+          <ellipse cx="20" cy="23" rx="7" ry="6.5" fill="#FFF"/>
+          <circle cx="20" cy="15.5" r="5" fill="#FFF"/>
+          <circle cx="18.2" cy="14.8" r="0.9" fill="#2C3440"/>
+          <circle cx="21.8" cy="14.8" r="0.9" fill="#2C3440"/>
+          <path d="M19 16.8 L20 18.2 L21 16.8 Z" fill="#F59E0B"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Privacy Chick</span>
+        <p>Simple, practical guides to protecting your digital privacy. No tech background required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="2fa.html">Two-Factor Authentication</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="email.html">Email</a></li>
+          <li><a href="browser.html">Browser</a></li>
+          <li><a href="search.html">Search Engine</a></li>
+          <li><a href="social.html">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Guides</h4>
+        <ul>
+          <li><a href="text.html">Text Messaging</a></li>
+          <li><a href="credit.html">Credit Freeze</a></li>
+          <li><a href="pwned.html">Data Breaches</a></li>
+          <li><a href="vpn.html">VPN</a></li>
+          <li><a href="ai.html">AI Assistants</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2018&ndash;<span id="yr"></span> Privacy Chick. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

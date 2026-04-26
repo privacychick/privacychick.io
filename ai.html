@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistants | Privacy Chick</title>
+  <meta name="description" content="AI assistants like ChatGPT store everything you type and use it to train their models. Learn which tools are safer — and how to use them wisely.">
+  <link rel="stylesheet" href="css/style.css?v=16">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" href="favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-left">
+      <a href="index.html" class="nav-logo" aria-label="Privacy Chick Home">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M20 2L4 9v10c0 9.4 6.8 18.2 16 20.4C29.2 37.2 36 28.4 36 19V9L20 2z" fill="#2D7D6F"/>
+          <ellipse cx="20" cy="23" rx="7" ry="6.5" fill="#FFF"/>
+          <circle cx="20" cy="15.5" r="5" fill="#FFF"/>
+          <circle cx="18.2" cy="14.8" r="0.9" fill="#2C3440"/>
+          <circle cx="21.8" cy="14.8" r="0.9" fill="#2C3440"/>
+          <path d="M19 16.8 L20 18.2 L21 16.8 Z" fill="#F59E0B"/>
+        </svg>
+        <span class="nav-logo-text">Privacy Chick</span>
+      </a>
+      <span class="nav-tagline">Your digital privacy, simplified</span>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-drawer" id="navDrawer">
+  <p class="nav-drawer-label">Guides</p>
+  <a href="2fa.html">2FA</a>
+  <a href="passwords.html">Passwords</a>
+  <a href="email.html">Email</a>
+  <a href="browser.html">Browser</a>
+  <a href="search.html">Search</a>
+  <a href="social.html">Social</a>
+  <a href="text.html">Messaging</a>
+  <a href="credit.html">Credit Freeze</a>
+  <a href="pwned.html">Data Breaches</a>
+  <a href="vpn.html">VPN</a>
+  <a href="ai.html">AI Assistants</a>
+  <p class="nav-drawer-label">Site</p>
+  <a href="about.html">My Story</a>
+  <a href="contact.html">Contact</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg" style="background-image: url('images/topics/ai.jpg');"></div>
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="eyebrow">New Guide</span>
+      <h1>AI Assistants</h1>
+      <p>AI tools are extraordinarily useful &mdash; but most of them store everything you type. Here&rsquo;s how to use them wisely.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<div class="page-content">
+  <div class="container">
+    <div class="content-grid">
+      <main class="content-main">
+
+        <!-- RECOMMENDATION -->
+        <div class="rec-box" id="recommendation">
+          <span class="eyebrow">My recommendation</span>
+          <div style="display:flex;justify-content:center;gap:1.25rem;margin:0.75rem auto 1rem;"><img src="images/logos/duckduckgo.png" alt="Two tools for two purposes logo" class="rec-logo" style="margin:0;"><img src="images/logos/perplexity.webp" alt="Perplexity logo" class="rec-logo" style="margin:0;"></div>
+          <h2>Two tools for two purposes</h2>
+          <p>Duck.ai for anything private or sensitive. Perplexity for research &mdash; but <strong>never enter personal information</strong> into Perplexity.</p>
+          <a href="https://duck.ai" target="_blank" rel="noopener" class="btn btn-primary">Try Duck.ai</a>
+          <a href="https://www.perplexity.ai" target="_blank" rel="noopener" class="btn btn-primary" style="background:#16a34a;border-color:#16a34a;margin-top:0.6rem;display:inline-block;">Try Perplexity AI</a>
+        </div>
+
+        <!-- TABS -->
+        <div class="tabs-wrapper">
+          <div class="tabs-nav">
+            <button class="tab-btn active" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+              Quick Guide
+            </button>
+            <button class="tab-btn" type="button">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+              Learn More
+            </button>
+          </div>
+          <div class="tab-panel active" id="guide">
+            <div class="content-section" style="border:none;padding-bottom:0;margin-bottom:1.5rem;">
+              <h2 style="margin-bottom:0.5rem;">The golden rule of AI assistants</h2>
+              <p style="font-size:1.05rem;"><strong>Treat everything you type into an AI as potentially public.</strong> Never enter your full name, address, Social Security number, financial details, medical information, or anything you wouldn&rsquo;t want a stranger to read.</p>
+            </div>
+
+            <div class="content-section">
+              <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:0.45rem;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>For private or sensitive questions: Duck.ai</h3>
+              <p>Duck.ai routes your queries anonymously to powerful AI models (including GPT-4o and Claude) without revealing your identity to the underlying AI provider. DuckDuckGo strips identifying information from your request before forwarding it, and does not store your conversations.</p>
+            <ol class="steps-list">
+              <li class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Go to duck.ai</h4>
+                  <p>Visit <a href="https://duck.ai" target="_blank" rel="noopener">duck.ai</a> or open the DuckDuckGo Browser and tap the Duck.ai icon. No account required.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Choose your model</h4>
+                  <p>You can select from several AI models including GPT-4o mini, Claude, and Llama. They all work well for general questions.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Ask your question</h4>
+                  <p>Type your question naturally. Duck.ai is good for: health questions, legal questions, financial questions, personal advice, and anything you want to keep private.</p>
+                </div>
+              </li>
+            </ol>
+            </div>
+
+            <div class="content-section">
+              <h3><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-3px;margin-right:0.45rem;"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>For research and general questions: Perplexity</h3>
+
+              <div class="callout callout-danger" style="margin-bottom:1.25rem;border-left:4px solid #C0392B;">
+                <span class="callout-icon">&#128683;</span>
+                <div class="callout-body">
+                  <strong>Perplexity is powerful &mdash; but it is NOT private</strong>
+                  <p>I recommend Perplexity because it is the best AI research tool available. It searches the web in real time and cites its sources, making it far more accurate than most AI tools for current events, fact-checking, and research. <strong>But you must understand what you are trading for that capability.</strong></p>
+                  <p>A federal lawsuit filed in April 2026 (<em>Doe v. Perplexity AI Inc., N.D. California</em>) alleges that Perplexity embedded Facebook&rsquo;s Meta Pixel, Google Ads, Google DoubleClick, and Meta&rsquo;s Conversions API &mdash; and that full conversation text was transmitted to Meta and Google. The lawsuit specifically alleges this occurred even in Incognito Mode, calling that feature &ldquo;a sham.&rdquo; Perplexity has not denied the tracking practices.</p>
+                  <p><strong>Treat Perplexity like a public search engine. Never enter anything you would not want Meta or Google to read.</strong></p>
+                </div>
+              </div>
+
+              <p>With those caveats clearly stated: Perplexity is genuinely the superior tool for research tasks. Use it for general knowledge, current events, product research, and fact-checking &mdash; but keep it impersonal.</p>
+            <ol class="steps-list">
+              <li class="step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                  <h4>Go to Perplexity.ai</h4>
+                  <p>Visit <a href="https://www.perplexity.ai" target="_blank" rel="noopener">perplexity.ai</a>. You can use it without an account for basic queries.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                  <h4>Use it only for non-personal research</h4>
+                  <p>Perplexity is excellent for: current events, product research, travel planning, general knowledge, and fact-checking. Never enter personal information.</p>
+                </div>
+              </li>
+              <li class="step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                  <h4>Check the sources</h4>
+                  <p>Perplexity cites its sources below each answer. Always click through to verify important information &mdash; AI tools can still make mistakes.</p>
+                </div>
+              </li>
+            </ol>
+            </div>
+            <div class="callout callout-danger">
+              <span class="callout-icon">&#128683;</span>
+              <div class="callout-body">
+                <strong>Never enter these into any AI tool</strong>
+                <p>Your full name + address, Social Security number, bank account or credit card numbers, medical diagnoses or prescription details, passwords or security questions, or information about other people without their consent.</p>
+              </div>
+            </div>
+          </div>
+          <div class="tab-panel" id="learn-more">
+            <div class="content-section">
+              <h2>What happens to what you type into AI tools</h2>
+              <p>When you type a question into ChatGPT, Google Gemini, or most other AI assistants, that conversation is stored on the company&rsquo;s servers. In many cases it is used to train future versions of the AI model. Your conversations may be reviewed by human employees for quality and safety purposes, and are subject to the company&rsquo;s data retention policies &mdash; which can mean storage for months or years.</p>
+              <p>Most AI companies are based in the United States and are subject to US law enforcement requests. Some, like OpenAI, have faced criticism for their data practices and have had security incidents. The rule of thumb: assume everything you type into any cloud AI is potentially readable by the company, its employees, its advertisers, and law enforcement.</p>
+            </div>
+            <div class="content-section">
+              <h2>Why Duck.ai is different</h2>
+              <p>Duck.ai acts as a privacy-preserving intermediary. When you use it, DuckDuckGo strips your IP address and other identifying information from the request before forwarding it to the underlying AI model (GPT-4o mini, Claude, Llama, or Mixtral). The AI provider never knows who asked the question. DuckDuckGo itself does not store your conversations after the session ends.</p>
+              <p>This is a meaningful privacy improvement over using ChatGPT or Claude directly. It is not perfect anonymity &mdash; DuckDuckGo can still see your queries during the session &mdash; but it removes your identity from the equation at the AI model level.</p>
+            </div>
+            <div class="content-section">
+              <h2>Perplexity: the best research tool, with serious privacy caveats</h2>
+              <p>Perplexity is genuinely the most capable AI research tool I have used. It searches the web in real time, cites its sources, and produces answers that are far more accurate for current events and fact-checking than tools that rely on static training data. For those reasons, I recommend it &mdash; but with clear eyes about what it costs you in privacy.</p>
+              <h3 style="margin-top:1.25rem;">What Perplexity collects</h3>
+              <ul style="margin-bottom:1rem;">
+                <li>Device data and interaction data from all users, including those without accounts</li>
+                <li>Your IP address and device fingerprint</li>
+                <li>Search queries, which are used for AI training by default (you can opt out in Settings)</li>
+                <li>Personal information if you create an account</li>
+              </ul>
+              <h3 style="margin-top:1.25rem;">The April 2026 lawsuit</h3>
+              <p>In April 2026, a federal lawsuit was filed in the Northern District of California (<em>Doe v. Perplexity AI Inc., 3:26-cv-02803</em>) alleging that Perplexity had embedded Facebook&rsquo;s Meta Pixel, Google Ads, Google DoubleClick, and Meta&rsquo;s Conversions API into its platform &mdash; and that full conversation text was being transmitted to Meta and Google as a result. The lawsuit specifically alleges this occurred even in Perplexity&rsquo;s &ldquo;Incognito Mode,&rdquo; calling that feature &ldquo;a sham&rdquo; because the same trackers allegedly fired regardless of the setting. Perplexity has not denied the tracking practices; its only public response was that it had not yet been served the lawsuit.</p>
+              <p>This is consistent with a pattern of behavior: Perplexity was caught violating robots.txt crawling rules in 2024 and deploying stealth web crawlers in 2025. The company has repeatedly prioritised capability and growth over ethical constraints.</p>
+              <h3 style="margin-top:1.25rem;">How to reduce your exposure if you use Perplexity</h3>
+              <ol style="margin-bottom:1rem;">
+                <li>Go to <strong>Profile &rarr; Settings &rarr; AI Data Usage</strong> and turn it <strong>OFF</strong> to stop your queries being used for AI training.</li>
+                <li>Use it <strong>without creating an account</strong> where possible &mdash; this limits how much personal data is tied to a profile.</li>
+                <li>Do not rely on Incognito Mode for privacy protection &mdash; based on the lawsuit allegations, it may not protect you from third-party tracking.</li>
+                <li>Treat every query as if Meta and Google will read it. If that makes you uncomfortable, use Duck.ai instead.</li>
+              </ol>
+            </div>
+            <div class="content-section">
+              <h2>The right mental model for AI tools</h2>
+              <p>Think of AI assistants the way you&rsquo;d think of asking a question in a crowded public space. You might ask a stranger for directions, or ask a librarian to help you find a book on a general topic. But you wouldn&rsquo;t announce your Social Security number, describe your medical history, or share your financial details in that setting.</p>
+              <p>AI tools are extraordinarily useful for general knowledge, writing assistance, research, and creative tasks. Use them freely for those purposes. Just be thoughtful about what personal information you include in your queries.</p>
+            </div>
+            <div class="further-reading">
+              <h3>Further Reading</h3>
+              <ul>
+                <li><a href="https://duckduckgo.com/duckduckgo-help-pages/duckai/ai-chat-privacy/" target="_blank" rel="noopener">Duck.ai Privacy</a><span class="source">DuckDuckGo Help</span></li>
+                <li><a href="https://www.perplexity.ai/privacy" target="_blank" rel="noopener">Perplexity Privacy Policy</a><span class="source">Perplexity AI</span></li>
+                <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">What Does OpenAI Do With Your Data?</a><span class="source">OpenAI Privacy Policy</span></li>
+                <li><a href="https://www.eff.org/deeplinks/2023/08/what-you-should-know-about-chatgpt-and-your-privacy" target="_blank" rel="noopener">How to Use AI Tools More Privately</a><span class="source">Electronic Frontier Foundation</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </main>
+      <aside class="content-sidebar">
+        <div class="sidebar-card">
+          <h4>Try These Tools</h4>
+          <ul style="margin-top:0.5rem;">
+              <li><a href="https://duck.ai" target="_blank" rel="noopener">Duck.ai</a></li>
+              <li><a href="https://www.perplexity.ai" target="_blank" rel="noopener">Perplexity (research only)</a></li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Privacy Chick</span>
+        <p>Simple, practical guides to protecting your digital privacy. No tech background required.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Guides</h4>
+        <ul>
+          <li><a href="2fa.html">Two-Factor Authentication</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="email.html">Email</a></li>
+          <li><a href="browser.html">Browser</a></li>
+          <li><a href="search.html">Search Engine</a></li>
+          <li><a href="social.html">Social Media</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>More Guides</h4>
+        <ul>
+          <li><a href="text.html">Text Messaging</a></li>
+          <li><a href="credit.html">Credit Freeze</a></li>
+          <li><a href="pwned.html">Data Breaches</a></li>
+          <li><a href="vpn.html">VPN</a></li>
+          <li><a href="ai.html">AI Assistants</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="about.html">My Story</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2018&ndash;<span id="yr"></span> Privacy Chick. All rights reserved.</p>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+    </div>
+  </div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
