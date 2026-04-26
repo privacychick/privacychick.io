@@ -2,7 +2,7 @@
 
 **Your digital privacy, simplified.**
 
-Privacy Chick is a personal, opinionated guide to protecting your digital life — written by a real person who got fed up feeling like his data was out of his control.
+Privacy Chick is a personal, opinionated guide to protecting your digital life — written by a real person who got fed up feeling like her data was out of her control.
 
 This site is not affiliated with any company. There are no ads, no affiliate links, and no financial relationships with any product recommended here. Everything on this site is something the author personally uses.
 
