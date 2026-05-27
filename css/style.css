@@ -243,6 +243,9 @@ p:last-child { margin-bottom: 0; }
 .sidebar-card ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.4rem; }
 .sidebar-card ul li a { font-size: 0.88rem; color: var(--charcoal-mid); transition: color 0.2s; }
 .sidebar-card ul li a:hover { color: var(--teal); text-decoration: none; }
+.sidebar-next-guide { border-color: rgba(45,125,111,0.28); background: var(--teal-pale); }
+.sidebar-next-guide a { color: var(--charcoal-mid); }
+.sidebar-next-guide a:hover { color: var(--teal) !important; text-decoration: none; }
 .content-section { margin-bottom: 3rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border); }
 .content-section:last-child { border-bottom: none; margin-bottom: 0; }
 .content-section h2 { font-size: 1.45rem; margin-bottom: 1rem; }
