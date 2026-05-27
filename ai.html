@@ -51,7 +51,7 @@
   <div class="page-hero-bg" style="background-image: url('images/topics/ai.jpg');"></div>
   <div class="container">
     <div class="page-hero-content">
-      <span class="eyebrow">New Guide</span>
+      <span class="eyebrow"><span class="badge-advanced" style="position:static; display:inline-block; margin-bottom:0.5rem;">Advanced</span></span>
       <h1>AI Assistants</h1>
       <p>AI tools are extraordinarily useful, but most of them store everything you type. Here&rsquo;s how to use them wisely.</p>
     </div>
@@ -64,15 +64,34 @@
     <div class="content-grid">
       <main class="content-main">
 
-        <!-- RECOMMENDATION -->
-        <div class="rec-box" id="recommendation">
-          <span class="eyebrow">My recommendation</span>
-          <div style="display:flex;justify-content:center;gap:1.25rem;margin:0.75rem auto 1rem;"><img src="images/logos/duckduckgo.png" alt="Two tools for two purposes logo" class="rec-logo" style="margin:0;"><img src="images/logos/perplexity.webp" alt="Perplexity logo" class="rec-logo" style="margin:0;"></div>
-          <h2>Two tools for two purposes</h2>
-          <p>Duck.ai for anything private or sensitive. Perplexity for research, but <strong>never enter personal information</strong> into Perplexity.</p>
-          <a href="https://duck.ai" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try Duck.ai</a>
-          <a href="https://www.perplexity.ai" class="btn btn-primary" style="background:#16a34a;border-color:#16a34a;margin-top:0.6rem;display:inline-block;" target="_blank" rel="noopener noreferrer">Try Perplexity AI</a>
+        <!-- RECOMMENDATION: two side-by-side cards -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-bottom:2rem;" id="recommendation">
+
+          <!-- Privacy card -->
+          <div class="rec-box" style="margin-bottom:0;">
+            <span class="eyebrow">My Privacy Recommendation</span>
+            <img src="images/logos/duckduckgo.png" alt="Duck.ai logo" class="rec-logo">
+            <h2 style="font-size:1.3rem;">Duck.ai</h2>
+            <p style="font-size:0.92rem;">Use Duck.ai for anything private or sensitive. Your identity is stripped before the query reaches the AI model, and your conversations are not stored.</p>
+            <a href="https://duck.ai" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Try Duck.ai</a>
+          </div>
+
+          <!-- Research card -->
+          <div class="rec-box" style="margin-bottom:0;border-color:rgba(217,119,6,0.35);background:var(--amber-pale, #fffbeb);">
+            <span class="eyebrow" style="color:var(--amber,#d97706);">My Research Recommendation</span>
+            <img src="images/logos/perplexity.webp" alt="Perplexity logo" class="rec-logo">
+            <h2 style="font-size:1.3rem;">Perplexity</h2>
+            <div style="display:inline-block;background:#dc2626;color:#fff;font-size:0.7rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;padding:0.2rem 0.55rem;border-radius:4px;margin-bottom:0.6rem;">Not a privacy tool</div>
+            <p style="font-size:0.92rem;">Perplexity is the best research tool available, but it collects significant data. <strong>Never enter personal information.</strong> Use it for research only.</p>
+            <a href="https://www.perplexity.ai" class="btn btn-primary" style="background:var(--amber,#d97706);border-color:var(--amber,#d97706);" target="_blank" rel="noopener noreferrer">Try Perplexity AI</a>
+          </div>
+
         </div>
+        <style>
+          @media (max-width: 640px) {
+            #recommendation { grid-template-columns: 1fr !important; }
+          }
+        </style>
 
         <!-- TABS -->
         <div class="tabs-wrapper">
@@ -169,7 +188,7 @@
           <div class="tab-panel" id="learn-more">
             <div class="content-section">
               <h2>What happens to what you type into AI tools</h2>
-              <p>When you type a question into ChatGPT, Google Gemini, or most other AI assistants, that conversation is stored on the company&rsquo;s servers. In many cases it is used to train future versions of the AI model. Your conversations may be reviewed by human employees for quality and safety purposes, and are subject to the company&rsquo;s data retention policies, which can mean storage for months or years.</p>
+              <p>When you type a question into Anthropic Claude, ChatGPT, Google Gemini, Microsoft Copilot, or most other AI assistants, that conversation is stored on the company&rsquo;s servers. In many cases it is used to train future versions of the AI model. Your conversations may be reviewed by human employees for quality and safety purposes, and are subject to the company&rsquo;s data retention policies, which can mean storage for months or years.</p>
               <p>Most AI companies are based in the United States and are subject to US law enforcement requests. Some, like OpenAI, have faced criticism for their data practices and have had security incidents. The rule of thumb: assume everything you type into any cloud AI is potentially readable by the company, its employees, its advertisers, and law enforcement.</p>
             </div>
             <div class="content-section">
@@ -206,10 +225,10 @@
             <div class="further-reading">
               <h3>Further Reading</h3>
               <ul>
-                <li><a href="https://duckduckgo.com/duckduckgo-help-pages/duckai/ai-chat-privacy/" target="_blank" rel="noopener noreferrer">Duck.ai Privacy</a><span class="source">DuckDuckGo Help</span></li>
+                <li><a href="https://duckduckgo.com/duckduckgo-help-pages/duckai/ai-chat-privacy/" target="_blank" rel="noopener noreferrer">How does Duck.ai protect my privacy?</a><span class="source">DuckDuckGo Help</span></li>
                 <li><a href="https://www.perplexity.ai/privacy" target="_blank" rel="noopener noreferrer">Perplexity Privacy Policy</a><span class="source">Perplexity AI</span></li>
-                <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">What Does OpenAI Do With Your Data?</a><span class="source">OpenAI Privacy Policy</span></li>
-                <li><a href="https://www.eff.org/deeplinks/2023/08/what-you-should-know-about-chatgpt-and-your-privacy" target="_blank" rel="noopener noreferrer">How to Use AI Tools More Privately</a><span class="source">Electronic Frontier Foundation</span></li>
+                <li><a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer">OpenAI US privacy policy</a><span class="source">OpenAI</span></li>
+                <li><a href="https://www.linkedin.com/pulse/how-use-ai-tools-privately-securely-marc-raphael-zslze" target="_blank" rel="noopener noreferrer">How to Use AI Tools Privately and Securely</a><span class="source">LinkedIn</span></li>
               </ul>
             </div>
           </div>
@@ -248,10 +267,10 @@
         <h4>Guides</h4>
         <ul>
           <li><a href="2fa.html">Two-Factor Authentication</a></li>
-          <li><a href="passwords.html">Passwords</a></li>
           <li><a href="email.html">Email</a></li>
-          <li><a href="browser.html">Browser</a></li>
           <li><a href="search.html">Search Engine</a></li>
+          <li><a href="passwords.html">Passwords</a></li>
+          <li><a href="browser.html">Browser</a></li>
           <li><a href="social.html">Social Media</a></li>
         </ul>
       </div>
